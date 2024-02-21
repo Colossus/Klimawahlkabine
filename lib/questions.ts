@@ -82,7 +82,7 @@ export const questions: Question[] = [
       {
         text: "Implementing carbon taxes on major polluters",
         points: {
-          "Green Future": 6,
+          "Green Future": 3,
           "Sustainable Progress": 4,
           "Economic Growth": 3,
           "Tech Innovators": 3,
@@ -92,21 +92,21 @@ export const questions: Question[] = [
       {
         text: "Enhancing public transportation infrastructure",
         points: {
-          "Green Future": 4,
-          "Sustainable Progress": 6,
+          "Green Future": 0,
+          "Sustainable Progress": 1,
           "Economic Growth": 1,
-          "Tech Innovators": 5,
+          "Tech Innovators": 3,
           "Traditional Values": 3,
         },
       },
       {
         text: "Promoting carbon capture and storage technology",
         points: {
-          "Green Future": 3,
-          "Sustainable Progress": 5,
+          "Green Future": 0,
+          "Sustainable Progress": 0,
           "Economic Growth": 4,
-          "Tech Innovators": 6,
-          "Traditional Values": 2,
+          "Tech Innovators": 0,
+          "Traditional Values": 4,
         },
       },
     ],
@@ -139,21 +139,21 @@ export const questions: Question[] = [
       {
         text: "Providing education and resources for self-sustainability",
         points: {
-          "Green Future": 5,
-          "Sustainable Progress": 6,
+          "Green Future": 0,
+          "Sustainable Progress": 1,
           "Economic Growth": 1,
           "Tech Innovators": 3,
-          "Traditional Values": 4,
+          "Traditional Values": 3,
         },
       },
       {
         text: "No specific support; focus on broader climate policies",
         points: {
-          "Green Future": 1,
-          "Sustainable Progress": 1,
-          "Economic Growth": 8,
-          "Tech Innovators": 4,
-          "Traditional Values": 6,
+          "Green Future": 0,
+          "Sustainable Progress": 0,
+          "Economic Growth": 4,
+          "Tech Innovators": 0,
+          "Traditional Values": 0,
         },
       },
     ],
