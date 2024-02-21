@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import questions, { Party } from "./questions"; // Adjust the import path based on your project structure
+import questions, { Party } from "../lib/questions"; // Adjust the import path based on your project structure
 import Link from "next/link";
 
 interface GivenAnswer {
