@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import questions, { Party } from "./questions"; // Adjust the import path based on your project structure
+import Link from "next/link";
 
 interface GivenAnswer {
   questionId: number;
@@ -116,13 +117,16 @@ export default function Home() {
   };
 
   return (
-    <div className="min-h-screen bg-blue-50 flex flex-col items-center justify-center">
-      <header className="text-center py-5">
+    <div className="min-h-screen bg-blue-50 flex flex-col items-center justify-center px-4">
+      {" "}
+      {/* Added horizontal padding */}
+      <header className="text-center py-5 w-full">
+        {" "}
+        {/* Ensure header takes full width */}
         <h1 className="text-4xl font-bold text-gray-800">
-          Climate Change Questionnaire
+          Klimawahlkabine
         </h1>
       </header>
-
       {!showResults ? (
         <div className="w-full max-w-lg">
           <div className="mb-5">
@@ -163,15 +167,15 @@ export default function Home() {
             >
               Previous
             </button>
-            {/* Show Results Button remains unchanged */}
-            <button
-              onClick={handleShowResults}
-              className={`bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded ${
-                currentQuestionIndex === questions.length - 1 ? "" : "hidden"
-              }`}
-            >
-              Show Results
-            </button>
+            {currentQuestionIndex === questions.length - 1 &&
+            answers.length === questions.length ? (
+              <button
+                onClick={handleShowResults}
+                className="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded"
+              >
+                Show Results
+              </button>
+            ) : null}
             <button
               disabled={currentQuestionIndex === questions.length - 1}
               onClick={goToNextQuestion}
@@ -197,6 +201,12 @@ export default function Home() {
           </button>
         </div>
       )}
+      <footer className="text-center py-5">
+        <p>&copy; {new Date().getFullYear()} Fridays For Future Oesterreich.</p>
+        <Link href="/imprint" className="text-blue-600 hover:text-blue-800">
+          Impressum
+        </Link>
+      </footer>
     </div>
   );
 }
